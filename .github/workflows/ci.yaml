@@ -28,4 +28,5 @@ jobs:
 
     - name: Run tests
       run: |
-        pytest _test.py
+        pip install pytest
+        pytest test_utils.py --timeout=30
